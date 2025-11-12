@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucesso RH - Nossos Links</title>
+    <!-- Carrega o Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Importa a fonte Inter --><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Estilos customizados */
+        body {
+            /* Define o fundo com gradiente linear */
+            background: linear-gradient(135deg, #0a4f8c, #0077b6, #00c4cc, #0077b6);
+            /* Define o tamanho do fundo para a animação */
+            background-size: 400% 400%;
+            /* Aplica a animação */
+            animation: animatedGradient 15s ease infinite;
+            /* Aplica a fonte Inter */
+            font-family: 'Inter', sans-serif;
+            color: white; /* Cor do texto padrão para o corpo */
+        }
+
+        /* Animação do gradiente */
+        @keyframes animatedGradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Estilo customizado para os botões para combinar com a referência */
+        .link-button {
+            /* Cores */
+            background-color: white;
+            color: #0077b6; /* Tom de azul médio da referência */
+            border: 2px solid transparent;
+            /* Espaçamento e Borda */
+            padding-top: 0.875rem; /* 14px */
+            padding-bottom: 0.875rem; /* 14px */
+            border-radius: 9999px; /* Borda totalmente arredondada */
+            /* Sombra */
+            box-shadow: 0 4px 14px 0 rgba(0, 119, 182, 0.3); /* Sombra azulada */
+            /* Flexbox */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* Texto */
+            font-weight: 600;
+            text-align: center;
+            /* Transição */
+            transition: all 0.3s ease;
+        }
+
+        /* Efeito hover para os botões */
+        .link-button:hover {
+            transform: scale(1.03); /* Leve aumento */
+            box-shadow: 0 6px 20px 0 rgba(0, 119, 182, 0.4); /* Sombra mais forte */
+            background-color: #f7fcff; /* Fundo levemente azulado */
+            border-color: #00c4cc; /* Borda teal ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Container Principal --><div class="flex flex-col items-center justify-center min-h-screen p-4">
+        
+        <!-- Cabeçalho com Logotipo --><header class="mb-8 text-center">
+            <img 
+                src="https://i.postimg.cc/h4Vf5H4z/logosucesso.png" 
+                alt="Logotipo Sucesso Recursos Humanos" 
+                class="w-48 h-auto mx-auto mb-4"
+                onerror="this.alt='Logotipo Sucesso RH'; this.src='https://placehold.co/192x100/0a4f8c/FFFFFF?text=Sucesso+RH';"
+            >
+        </header>
+
+        <!-- Seção de Links --><main class="w-full max-w-md mx-auto">
+            <div class="flex flex-col space-y-5">
+
+                <!-- Link 1: Instagram --><a 
+                    href="https://instagram.com/sucessorecursoshumanos" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="link-button"
+                >
+                    <span>Instagram</span>
+                </a>
+
+                <!-- Link 2: Central de Candidatura --><a 
+                    href="https://rhsucesso.com.br" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="link-button"
+                >
+                    <span>Central de Candidatura</span>
+                </a>
+
+                <!-- Link 3: Site Sucesso RH --><a 
+                    href="https://sucessorh.github.io/sucessorecursoshumanos/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="link-button"
+                >
+                    <span>Site Sucesso RH</span>
+                </a>
+
+                <!-- Link 4: Pesquisa de Satisfação --><a 
+                    href="https://sucessorh.github.io/pesquisainternasucessorh/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="link-button"
+                >
+                    <span>Pesquisa de Satisfação</span>
+                </a>
+
+            </div>
+        </main>
+
+        <!-- Rodapé --><footer class="mt-12 text-center">
+            <p class="text-sm text-white/80">
+                Sucesso Recursos Humanos &copy; 2025
+            </p>
+        </footer>
+    </div>
+
+</body>
+</html>
